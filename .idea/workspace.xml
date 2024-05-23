@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2glgzmBScd6oSHhyfhxcF9rwoN3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Damian/WebstormProjects/NotesApp/public/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "C:\\Users\\Damian\\WebstormProjects\\NotesApp\\public\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\public" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\enums" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\collections" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\public" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\contexts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="" />
+      <created>1716277843146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716277843146</updated>
+      <workItem from="1716277844233" duration="5580000" />
+      <workItem from="1716283470347" duration="311000" />
+      <workItem from="1716283972795" duration="332000" />
+      <workItem from="1716284492840" duration="1988000" />
+      <workItem from="1716286493598" duration="9556000" />
+      <workItem from="1716309796407" duration="3109000" />
+      <workItem from="1716357233103" duration="4498000" />
+      <workItem from="1716362758544" duration="12388000" />
+      <workItem from="1716444002907" duration="3223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+</project>
