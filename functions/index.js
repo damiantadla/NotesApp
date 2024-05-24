@@ -1,19 +1,93 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
 
-const {onRequest} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
+admin.initializeApp();
+const db = admin.firestore();
+exports.createCollection = functions.firestore
+    .document("trigger_document/{documentId}")
+    .onCreate(async (snapshot, context) => {
+        try {
+            const db = admin.firestore();
+            const collectionRef = db.collection("new_collection");
+            // Sprawdź, czy kolekcja już istnieje
+            const collectionSnapshot = await collectionRef.get();
+            if (collectionSnapshot.empty) {
+                // Kolekcja nie istnieje, więc ją tworzymy
+                await collectionRef.add({}); // Możesz dodać dowolne dane do kolekcji
+                console.log("Kolekcja została utworzona pomyślnie");
+            } else {
+                console.log("Kolekcja już istnieje");
+            }
+        } catch (error) {
+            console.error("Błąd podczas tworzenia kolekcji:", error);
+        }
+    });
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
 
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+exports.deleteCollection = functions.firestore
+    .document("trigger_document/{documentId}")
+    .onCreate(async (snapshot, context) => {
+        try {
+            const db = admin.firestore();
+            const collectionRef = db.collection("new_collection");
+            // Sprawdź, czy kolekcja istnieje
+            const collectionSnapshot = await collectionRef.get();
+            if (!collectionSnapshot.empty) {
+                // Kolekcja istnieje, więc ją usuwamy
+                await collectionRef.delete({});
+                console.log("Kolekcja została usunięta pomyślnie");
+            } else {
+                console.log("Kolekcja nie istnieje");
+            }
+        } catch (error) {
+            console.error("Błąd podczas usuwania kolekcji:", error);
+        }
+    })
+
+exports.helloFn = functions.https.onRequest((req, res) => {
+    res.status(201).send("Hello from Firebase!");
+})
+
+exports.setUser = functions.https.onRequest((req, res) => {
+    console.log(req.params);
+    res.status(200).send("Success!");
+})
+
+exports.onUserSignUp = functions.auth.user().onCreate(async (user) => {
+    if (user) {
+        const userDoc = {
+            uid: user.uid,
+            email: user.email,
+            displayName: user.displayName,
+            photoURL: user.photoURL || '/avatar/avatar.png',
+            emailVerified: user.emailVerified || false,
+            phoneNumber: user.phoneNumber || 'No phone number',
+            role: user.customClaims
+        }
+        try {
+            const customClaims = (await admin.auth().getUser(user.uid)).customClaims
+
+            let userRole = "user"
+            if (customClaims && customClaims.role === "super_admin") {
+                return;
+            } else if (customClaims && customClaims.role === "admin") {
+                userRole = "admin";
+            }
+            userDoc.role = userRole;
+            await db.collection('users').doc(user.uid).set(userDoc);
+        } catch (error) {
+            console.error('Error adding user to database:', error);
+        }
+    }
+});
+
+exports.onDeleteUser = functions.firestore
+    .document("users/{documentId}")
+    .onDelete(async (snapshot, context) => {
+        console.log("snapshot" + snapshot.id)
+        try {
+            await admin.auth().deleteUser(snapshot.id)
+        } catch (error) {
+            console.error("Error: ", error);
+        }
+    })
