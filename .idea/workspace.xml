@@ -4,21 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Edit project">
+      <change afterPath="$PROJECT_DIR$/functions/users/changMail.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/changeMail.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/changeMailFromCollection.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/changeUserRole.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/closeUserAccount.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/createUser.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/createUserFromCollection.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/deleteUser.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/deleteUserFromCollection.func.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/test.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.indexes.json" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.indexes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.rules" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.rules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/collections/courses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/courses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/collections/notes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/notes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/collections/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/enums/roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/enums/roles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -64,7 +81,7 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "proofread",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "C:\\Users\\Damian\\WebstormProjects\\NotesApp\\public\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -111,8 +128,18 @@
       <workItem from="1716474934005" duration="1781000" />
       <workItem from="1716530290626" duration="696000" />
       <workItem from="1716531044067" duration="1239000" />
-      <workItem from="1716535077530" duration="9929000" />
+      <workItem from="1716535077530" duration="20139000" />
+      <workItem from="1716789993096" duration="16659000" />
     </task>
+    <task id="LOCAL-00001" summary="Edit project">
+      <option name="closed" value="true" />
+      <created>1716546788545</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716546788545</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +158,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edit project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit project" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import { buildCollection, buildProperty } from "firecms";
+import {buildCollection, buildProperty} from "firecms";
 import {notesCollection} from "./notes.tsx";
 
 export type Course = {
@@ -16,34 +16,34 @@ export const coursesCollection = buildCollection<Course>({
     icon: "School",
     subcollections: [notesCollection],
     properties: {
-        avatar: buildProperty({
+        avatar: {
             name: "Avatar",
             dataType: "string",
             storage: {
                 storagePath: "courses/avatar",
                 acceptedFiles: ["image/*"]
             }
-        }),
-        title: buildProperty({
+        },
+        title: {
             name: "Title",
             dataType: "string",
-            validation: { required: true }
-        }),
-        description: buildProperty({
+            validation: {required: true}
+        },
+        description: {
             name: "Description",
             dataType: "string"
-        }),
-        available: buildProperty({
+        },
+        available: {
             name: "Available",
             dataType: "boolean"
-        }),
-        lecturers: buildProperty({
+        },
+        lecturers: {
             name: "Lecturers",
             dataType: "array",
             of: {
                 dataType: "reference",
                 path: "lecturers"
             }
-        })
+        }
     }
 });

@@ -1,4 +1,4 @@
-import { buildCollection, buildProperty } from "firecms";
+import {buildCollection, buildProperty} from "firecms";
 
 export type Lecturer = {
     name: string;
@@ -14,27 +14,27 @@ export const lecturerCollection = buildCollection<Lecturer>({
     textSearchEnabled: true,
     icon: "GroupAdd",
     properties: {
-        name: buildProperty({
+        name: {
             name: "Name",
             dataType: "string",
-            validation: { required: true }
-        }),
-        surname: buildProperty({
+            validation: {required: true}
+        },
+        surname: {
             name: "Surname",
             dataType: "string",
-            validation: { required: true }
-        }),
-        dateOfBirth: buildProperty({
+            validation: {required: true}
+        },
+        dateOfBirth: {
             name: "Date of birth",
             dataType: "date",
             description: "Date of birth",
             mode: "date"
-        }),
-        dateOfEmployment: buildProperty({
+        },
+        dateOfEmployment: {
             name: "Date of birth",
             dataType: "date",
             description: "Date of employment",
             mode: "date"
-        })
+        }
     }
 });

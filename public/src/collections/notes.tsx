@@ -1,4 +1,4 @@
-import { buildCollection, buildProperty, EntityReference } from "firecms";
+import {buildCollection, buildProperty, EntityReference} from "firecms";
 
 
 export type Note = {
@@ -24,14 +24,14 @@ export const notesCollection = buildCollection<Note>({
             dataType: "string",
             markdown: true
         },
-        image: buildProperty({
+        image: {
             name: "Image",
             dataType: "string",
             storage: {
                 storagePath: "images",
                 acceptedFiles: ["image/*"]
             }
-        }),
+        },
         available: {
             name: "Available",
             dataType: "boolean"
@@ -39,11 +39,15 @@ export const notesCollection = buildCollection<Note>({
         atCreate: {
             name: "Created at",
             dataType: "date",
-            autoValue: "on_create",},
+            autoValue: "on_create",
+            readOnly: true
+        },
 
         atUpdate: {
             name: "Updated at",
             dataType: "date",
-            autoValue: "on_update",}
+            autoValue: "on_update",
+            readOnly: true
+        }
     }
 })

@@ -4,60 +4,69 @@ export type Users = {
     uid: string;
     displayName: string;
     email: string;
+    password: string;
     emailVerified: boolean;
-    phoneNumber: number;
-    photoUrl: string;
+    phoneNumber: string;
+    photoURL: string;
     role: string;
 }
 export const usersCollection = buildCollection<Users>({
     path: "users",
     name: "Users",
     singularName: "Users",
-    textSearchEnabled: true,
     icon: "Person",
     properties: {
-        uid: buildProperty({
+        uid: {
             name: "Id",
             dataType: "string",
             readOnly: true,
             validation: {required: true},
             columnWidth: 400
-        }),
-        displayName: buildProperty({
+        },
+        displayName: {
             name: "Name",
             dataType: "string",
             validation: {required: true}
-        }),
-        email: buildProperty({
+        },
+        email: {
             name: "Email",
             dataType: "string",
             validation: {required: true}
-        }),
-        emailVerified: buildProperty({
+        },
+        password: {
+            name: "Password",
+            dataType: "string",
+            validation: {required: true}
+        },
+        emailVerified: {
             name: "Email verify",
             dataType: "boolean",
-        }),
-        phoneNumber: buildProperty({
+        },
+        phoneNumber: {
             name: "Phone number",
-            dataType: "number",
-        }),
-        photoUrl: buildProperty({
+            dataType: "string",
+        },
+        photoURL: {
             name: "Avatar",
             dataType: "string",
             storage: {
                 storagePath: "users/avatar",
                 acceptedFiles: ["image/*"]
             }
-        }),
-        role: buildProperty({
+        },
+        role: {
             name: "Role",
-            dataType: "string",
-            validation: {required: true}
-        })
+            dataType: "string", // Zmieniono typ danych na string
+            validation: {required: true},
+            enumValues: {
+                admin: "Admin",
+                user: "User",
+            }
+        }
     },
     permissions: {
         edit: true,
-        create: false,
+        create: true,
         delete: true,
     }
 })

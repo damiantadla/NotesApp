@@ -85,6 +85,7 @@ export default function App() {
 
     const myAuthentication: Authenticator<FirebaseUser> = useCallback(async ({user, authController}) => {
         const idToken = await user?.getIdTokenResult();
+        console.log(user)
         const userIsAdmin = idToken?.claims.role === 'super_admin';
         authController.setExtra(userIsAdmin);
         if (!userIsAdmin) {
