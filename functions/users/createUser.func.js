@@ -2,13 +2,12 @@ const admin = require('firebase-admin')
 
 const functions = require('firebase-functions');
 
-const db = admin.firestore();
+const firestore = admin.firestore();
 
 //function users-createUser
 
 exports.default = functions.auth.user().onCreate(async (user) => {
     if (user) {
-        console.log(user)
         const userDoc = {
             uid: user.uid,
             email: user.email,
@@ -16,12 +15,22 @@ exports.default = functions.auth.user().onCreate(async (user) => {
             photoURL: user.photoURL || 'users/avatar/avatar.png',
             emailVerified: user.emailVerified || false,
             phoneNumber: user.phoneNumber || 'No phone number',
-            role: '',
+            block: false,
+            roles: '',
         }
         try {
-            await admin.auth().setCustomUserClaims(user.uid, {user: true})
-            userDoc.role = "user"
-            return db.collection('users').doc(user.uid).set(userDoc);
+            const userData = await admin.auth().getUser(user.uid)
+            const customClaims = userData.customClaims || {}
+            let customRoles;
+            if (!customClaims.roles) {
+                customRoles = ["USER"]
+                userDoc.roles = customRoles
+            } else {
+                customRoles = customClaims.roles
+                userDoc.roles = customRoles
+            }
+            await admin.auth().setCustomUserClaims(user.uid, {roles: customRoles})
+            return firestore.collection('users').doc(user.uid).set(userDoc);
         } catch (error) {
             throw new Error("Error: " + error)
         }
