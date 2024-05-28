@@ -7,21 +7,18 @@ exports.default = functions.firestore
     .onUpdate(async (change, context) => {
         const newValue = change.after.data();
         const oldValue = change.before.data();
-        if (oldValue.role !== newValue.role) {
+
+        if (oldValue.roles !== newValue.roles) {
             try {
-                const customClaims = {};
-                customClaims[newValue.role] = true;
-                await admin.auth().setCustomUserClaims(context.params.userId, customClaims)
+                const roles = newValue.roles
+                console.log(roles)
+                await admin.auth().setCustomUserClaims(context.params.userId, {roles: roles})
+
+                const user = await admin.auth().getUser(context.params.userId)
+                console.log(user)
             } catch (error) {
                 throw new Error("Error updating:" + error)
             }
         }
-        try {
-            const adminData = await admin.auth().getUser("O2tsr8ZBeAWFflI7HEizcNN20tVt")
-            console.log(adminData)
-            const user = await admin.auth().getUser("nXvqN5n95wmrzONzYQFNmyYDFsc1")
-            console.log(user)
-        } catch (error) {
 
-        }
     })
