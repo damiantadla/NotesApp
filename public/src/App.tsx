@@ -34,6 +34,8 @@ const DEFAULT_SIGN_IN_OPTIONS = [
     GoogleAuthProvider.PROVIDER_ID
 ];
 
+import {Roles, rolesDefault} from "./enums/roles.ts"
+
 import {getStorage, connectStorageEmulator} from 'firebase/storage';
 import {getFirestore, connectFirestoreEmulator} from 'firebase/firestore';
 import {
@@ -46,7 +48,6 @@ import {
 import {lecturerCollection} from "./collections/lecturer.tsx";
 import {usersCollection} from "./collections/users.tsx";
 import {coursesCollection} from "./collections/courses.tsx";
-import {rolesDefault} from "./enums/roles.ts";
 
 export default function App() {
     const signInOptions = [EmailAuthProvider.PROVIDER_ID, GoogleAuthProvider.PROVIDER_ID];
@@ -83,21 +84,39 @@ export default function App() {
 
     const snackbarController = useSnackbarController();
 
-    const myAuthentication: Authenticator<FirebaseUser> = useCallback(async ({user, authController}) => {
-        const idToken = await user?.getIdTokenResult();
-        console.log(user)
-        const userIsAdmin = idToken?.claims.role === 'super_admin';
-        authController.setExtra(userIsAdmin);
-        if (!userIsAdmin) {
-            snackbarController.open({
-                type: "success",
-                message: "Test snackbar"
-            })
-            console.log('You don\'t have access to the admin panel');
-            throw Error("You don't have permission to access the admin panel");
+    // const myAuthentication: Authenticator<FirebaseUser> = useCallback(async ({user, authController}) => {
+    //     const idToken = await user?.getIdTokenResult();
+    //     console.log(user)
+    //     const userIsAdmin = idToken?.claims.role === 'super_admin';
+    //     authController.setExtra(userIsAdmin);
+    //     if (!userIsAdmin) {
+    //         snackbarController.open({
+    //             type: "success",
+    //             message: "Test snackbar"
+    //         })
+    //         console.log('You don\'t have access to the admin panel');
+    //         throw Error("You don't have permission to access the admin panel");
+    //     }
+    //     return true;
+    // }, [snackbarController]);
+    const myAuthenticator: Authenticator<FirebaseUser> = useCallback(async ({user, authController}) => {
+        const idTokenResult = await user?.getIdTokenResult()
+        console.log(idTokenResult)
+        const roles = idTokenResult?.claims?.roles ?? [rolesDefault];
+        console.log(idTokenResult?.claims)
+        console.log(roles)
+        const userRoles = {
+            roles: roles,
         }
-        return true;
-    }, [snackbarController]);
+        console.log(userRoles)
+        authController.setExtra(userRoles)
+        // @ts-ignore
+        if (!(roles.includes(Roles.SUPER_ADMIN) || roles.includes(Roles.LECTURER))) {
+            throw Error('You don\'t have access to the admin panel!');
+        }
+
+        return true
+    }, [])
 
     const {
         authLoading,
@@ -105,7 +124,7 @@ export default function App() {
         notAllowedError
     } = useValidateAuthenticator({
         authController,
-        authentication: myAuthentication,
+        authentication: myAuthenticator,
         dataSource,
         storageSource
     });
