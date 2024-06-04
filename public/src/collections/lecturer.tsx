@@ -1,8 +1,11 @@
 import {buildCollection, buildProperty} from "firecms";
 
 export type Lecturer = {
-    name: string;
-    surname: string;
+    photoURL: string;
+    uid: string;
+    displayName: string;
+    email: string;
+    phoneNumber: string;
     dateOfBirth: any;
     dateOfEmployment: any;
 };
@@ -14,15 +17,37 @@ export const lecturerCollection = buildCollection<Lecturer>({
     textSearchEnabled: true,
     icon: "GroupAdd",
     properties: {
-        name: {
+        photoURL: {
+            name: "Avatar",
+            dataType: "string",
+            storage: {
+                storagePath: "users/avatar",
+                acceptedFiles: ["image/*"]
+            }
+        },
+        uid: {
+            name: "UID",
+            dataType: "string",
+            validation: {required: true},
+            readOnly: true
+        },
+        displayName: {
             name: "Name",
             dataType: "string",
-            validation: {required: true}
+            validation: {required: true},
+            readOnly: true
         },
-        surname: {
+        email: {
             name: "Surname",
             dataType: "string",
-            validation: {required: true}
+            validation: {required: true},
+            readOnly: true
+        },
+        phoneNumber: {
+            name: "Phone number",
+            dataType: "string",
+            validation: {required: true},
+            readOnly: true,
         },
         dateOfBirth: {
             name: "Date of birth",
@@ -36,5 +61,11 @@ export const lecturerCollection = buildCollection<Lecturer>({
             description: "Date of employment",
             mode: "date"
         }
+    },
+    permissions: {
+        create: false,
+        edit: true,
+        delete: false,
+        read: true
     }
 });
