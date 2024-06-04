@@ -101,14 +101,11 @@ export default function App() {
     // }, [snackbarController]);
     const myAuthenticator: Authenticator<FirebaseUser> = useCallback(async ({user, authController}) => {
         const idTokenResult = await user?.getIdTokenResult()
-        console.log(idTokenResult)
         const roles = idTokenResult?.claims?.roles ?? [rolesDefault];
-        console.log(idTokenResult?.claims)
-        console.log(roles)
+
         const userRoles = {
             roles: roles,
         }
-        console.log(userRoles)
         authController.setExtra(userRoles)
         // @ts-ignore
         if (!(roles.includes(Roles.SUPER_ADMIN) || roles.includes(Roles.LECTURER))) {
