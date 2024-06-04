@@ -1,4 +1,20 @@
-import {buildCollection, buildProperty} from "firecms"
+import {
+    buildCollection,
+    buildEntityCallbacks,
+    EntityOnDeleteProps,
+    EntityOnSaveProps,
+    toSnakeCase,
+    EntityOnFetchProps, User, EntityValues
+} from "firecms"
+
+function isValidEmail(value: any): any {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(value);
+}
+
+function checkLength(value: any, length: number): boolean {
+    return value.length >= length;
+}
 
 export type Users = {
     uid: string;
@@ -9,8 +25,44 @@ export type Users = {
     phoneNumber: string;
     photoURL: string;
     roles: any;
-    block: boolean;
+    disabled: boolean;
 }
+
+const userCallbacks = buildEntityCallbacks({
+
+    // onPreSave: ({
+    //                 collection,
+    //                 path,
+    //                 entityId,
+    //                 values,
+    //                 previousValues,
+    //                 status
+    //             }) => {
+    //     if (!isValidEmail(entitySaveProps.values.email)) throw new Error("Invalid email");
+    // },
+    onPreSave: ({
+                    collection,
+                    path,
+                    entityId,
+                    values,
+                    previousValues,
+                    status
+                }) => {
+
+        if (!isValidEmail(values.email)) throw new Error("Invalid email");
+        if (values.displayName && !checkLength(values.displayName, 4)) throw new Error("Name is too short")
+        if (values.password && !checkLength(values.password, 8)) throw new Error("Password is too short")
+        console.log(status)
+        return values
+    },
+
+    onSaveFailure: (props: EntityOnSaveProps<Users>) => {
+        console.log("onSaveFailure", props);
+    },
+
+});
+
+
 export const usersCollection = buildCollection<Users>({
     path: "users",
     name: "Users",
@@ -29,7 +81,6 @@ export const usersCollection = buildCollection<Users>({
             name: "Id",
             dataType: "string",
             readOnly: true,
-            validation: {required: true},
             columnWidth: 400
         },
         displayName: {
@@ -40,7 +91,9 @@ export const usersCollection = buildCollection<Users>({
         email: {
             name: "Email",
             dataType: "string",
-            validation: {required: true}
+            validation: {
+                required: true,
+            }
         },
         password: {
             name: "Password",
@@ -69,15 +122,16 @@ export const usersCollection = buildCollection<Users>({
                 }
             }
         },
-        block: {
-            name: "Block",
+        disabled: {
+            name: "Disabled",
             dataType: "boolean",
         }
     },
-    propertiesOrder: ['photoURL', 'uid', 'displayName', 'email', 'emailVerified', 'phoneNumber', "roles", "block"],
+    propertiesOrder: ['photoURL', 'uid', 'displayName', 'email', 'emailVerified', 'phoneNumber', "roles", "disabled"],
     permissions: {
         edit: true,
         create: true,
         delete: true,
-    }
+    },
+    callbacks: userCallbacks
 })

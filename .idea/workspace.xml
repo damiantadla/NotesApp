@@ -4,16 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Add new functions">
+    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Edit feature changeUserRole.func.js">
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/notes/newNote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/editAvatar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/editData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/getData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/middleware/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/routes/courses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/routes/notes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/users/changeDataUserFromCollection.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/users/changMail.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/deleteNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/users/changeMail.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/editNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/users/changeMailFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/getNote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/users/changeUserRole.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/changeUserRole.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/users/closeUserAccount.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/closeUserAccount.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/users/createUser.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/createUser.func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/users/createUserFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/createUserFromCollection.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/users/deleteUser.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/deleteUser.func.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/users/deleteUserFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/deleteUserFromCollection.func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/users/test.func.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/collections/notes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/notes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/collections/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/enums/roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/enums/roles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/public/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -31,6 +53,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -48,6 +75,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -58,9 +88,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Node.js.deleteUserFromCollection.func.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.logout.func.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/create-account-collection&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Damian/WebstormProjects/NotesApp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -78,14 +111,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp" />
       <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\public" />
       <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\enums" />
       <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\functions\api\controllers" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\functions\api\routes" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\functions\api" />
+      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\functions\api\notes" />
       <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\collections" />
-      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\public" />
-      <recent name="C:\Users\Damian\WebstormProjects\NotesApp\public\src\contexts" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -121,7 +157,26 @@
       <workItem from="1716535077530" duration="20139000" />
       <workItem from="1716789993096" duration="24841000" />
       <workItem from="1716833159513" duration="6367000" />
-      <workItem from="1716878496289" duration="13350000" />
+      <workItem from="1716878496289" duration="20399000" />
+      <workItem from="1716968401963" duration="18525000" />
+      <workItem from="1717096874560" duration="793000" />
+      <workItem from="1717097679830" duration="167000" />
+      <workItem from="1717097866168" duration="38000" />
+      <workItem from="1717097919669" duration="450000" />
+      <workItem from="1717098390510" duration="315000" />
+      <workItem from="1717098721017" duration="290000" />
+      <workItem from="1717099024682" duration="118000" />
+      <workItem from="1717099156639" duration="136000" />
+      <workItem from="1717099307024" duration="212000" />
+      <workItem from="1717099534518" duration="46000" />
+      <workItem from="1717099595543" duration="159000" />
+      <workItem from="1717099769731" duration="336000" />
+      <workItem from="1717144975350" duration="23901000" />
+      <workItem from="1717228438401" duration="9421000" />
+      <workItem from="1717265851155" duration="4471000" />
+      <workItem from="1717395057258" duration="23916000" />
+      <workItem from="1717438422451" duration="879000" />
+      <workItem from="1717481386917" duration="17154000" />
     </task>
     <task id="LOCAL-00001" summary="Edit project">
       <option name="closed" value="true" />
@@ -139,7 +194,71 @@
       <option name="project" value="LOCAL" />
       <updated>1716807930298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Edit deleteUser.func.js, deleteUserFromCollection.func.js">
+      <option name="closed" value="true" />
+      <created>1716892313166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892313166</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Edit auth feature">
+      <option name="closed" value="true" />
+      <created>1716892372744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892372744</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Edit collection">
+      <option name="closed" value="true" />
+      <created>1716892402626</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892402626</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Other">
+      <option name="closed" value="true" />
+      <created>1716892435109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892435109</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Edit roles">
+      <option name="closed" value="true" />
+      <created>1716892448811</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892448811</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Edit feature createUser.func.js">
+      <option name="closed" value="true" />
+      <created>1716892474405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892474405</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edit feature closeUserAccount.func.js">
+      <option name="closed" value="true" />
+      <created>1716892484079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892484079</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Edit feature changeUserRole.func.js">
+      <option name="closed" value="true" />
+      <created>1716892492036</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716892492036</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +281,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit project" />
     <MESSAGE value="Add new functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new functions" />
+    <MESSAGE value="Edit deleteUser.func.js, deleteUserFromCollection.func.js" />
+    <MESSAGE value="Edit auth feature" />
+    <MESSAGE value="Edit collection" />
+    <MESSAGE value="Other" />
+    <MESSAGE value="Edit roles" />
+    <MESSAGE value="Edit feature createUser.func.js" />
+    <MESSAGE value="Edit feature closeUserAccount.func.js" />
+    <MESSAGE value="Edit feature changeUserRole.func.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit feature changeUserRole.func.js" />
   </component>
 </project>
