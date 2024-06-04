@@ -2,9 +2,7 @@ const admin = require('firebase-admin')
 
 const functions = require('firebase-functions');
 
-const firestore = admin.firestore();
-
-//function users-createUser
+const firestore = admin.firestore()
 
 exports.default = functions.auth.user().onCreate(async (user) => {
     if (user) {
@@ -25,14 +23,15 @@ exports.default = functions.auth.user().onCreate(async (user) => {
             if (!customClaims.roles) {
                 customRoles = ["USER"]
                 userDoc.roles = customRoles
+                await firestore.collection('users').doc(user.uid).set(userDoc);
             } else {
                 customRoles = customClaims.roles
                 userDoc.roles = customRoles
             }
             await admin.auth().setCustomUserClaims(user.uid, {roles: customRoles})
-            return firestore.collection('users').doc(user.uid).set(userDoc);
         } catch (error) {
-            throw new Error("Error: " + error)
+            console.log(error)
+            throw new functions.https.HttpsError("internal", "Error creating user document", error.message)
         }
     }
 });
