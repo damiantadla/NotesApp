@@ -1,24 +1,33 @@
 const functions = require("firebase-functions");
 const admin = require('firebase-admin')
 
+/** TODO: Dodać wyjątki / Poczytać o wyjątkach metod http**/
+/** TODO: Refactor kodu **/
+const firestore = admin.firestore();
 
 exports.default = functions.firestore
     .document("users/{userId}")
     .onUpdate(async (change, context) => {
-        const newValue = change.after.data();
-        const oldValue = change.before.data();
-
-        if (oldValue.roles !== newValue.roles) {
+        const {roles: oldRoles} = change.before.data();
+        const {roles: newRoles, uid, photoURL, displayName, email, phoneNumber} = change.after.data();
+        if (oldRoles !== newRoles) {
             try {
-                const roles = newValue.roles
-                console.log(roles)
-                await admin.auth().setCustomUserClaims(context.params.userId, {roles: roles})
-
-                const user = await admin.auth().getUser(context.params.userId)
-                console.log(user)
+                await admin.auth().setCustomUserClaims(context.params.userId, {roles: newRoles})
             } catch (error) {
-                throw new Error("Error updating:" + error)
+                console.log(error)
+                throw new functions.auth.HttpsError('internal', 'Error updating user roles', error.message);
             }
+        }
+        if (newRoles.includes("LECTURER")) {
+            await firestore.collection("lecturers").doc(uid).set({
+                photoURL,
+                uid,
+                displayName,
+                email,
+                phoneNumber
+            })
+        } else {
+            await firestore.collection("lecturers").doc(uid).delete()
         }
 
     })

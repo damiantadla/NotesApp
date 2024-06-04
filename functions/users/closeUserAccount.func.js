@@ -5,16 +5,19 @@ const firestore = admin.firestore();
 
 exports.default = functions.auth.user().beforeSignIn(async (user, context) => {
     try {
-        const docSnapShot = await firestore.collection("users").doc(user.uid).get();
-        const data = docSnapShot.data();
+        if (user?.customClaims?.roles?.includes('SUPER_ADMIN')) return null;
 
-        if (data.block) {
+        const docSnapShot = await firestore.collection("users").doc(user.uid).get();
+        console.log(docSnapShot.data())
+        const {block} = docSnapShot.data();
+
+        if (block) {
             console.log("User is blocked");
-            throw new Error('User is blocked');
+            throw new functions.auth.HttpsError('permission-denied', 'User is blocked');
         }
         return null;
     } catch (error) {
         console.log("Error fetching user record:", error);
-        throw new functions.auth.HttpsError('internal', 'Unable to fetch user record', error.message);
+        throw new functions.auth.HttpsError('internal', 'Error fetching user record', error.message);
     }
 });
