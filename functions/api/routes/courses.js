@@ -6,12 +6,12 @@ const CoursesController = require("../controllers/courses/courses")
 const router = express.Router()
 
 router.get(
-    "/getAll",
+    "/",
     AuthMiddleware.auth,
     CoursesController.getCourses
 )
 
-router.get('/get',
+router.get('/:id',
     AuthMiddleware.auth,
     CoursesController.getCourse
 )

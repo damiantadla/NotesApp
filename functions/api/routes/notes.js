@@ -2,30 +2,30 @@ const express = require('express')
 
 const AuthMiddleware = require("../middleware/authMiddleware")
 const getNotesController = require("../controllers/notes/getNote")
-const createNotesController = require("../controllers/notes/newNote")
+const createNotesController = require("../controllers/notes/createNote")
 const deleteNotesController = require("../controllers/notes/deleteNote")
 const router = express.Router()
 
 router.post(
-    '/newNote',
+    '/',
     AuthMiddleware.auth,
-    createNotesController.newNote
+    createNotesController.createNote
 )
 
 router.get(
-    "/getNote",
+    "/",
     AuthMiddleware.auth,
     getNotesController.getNote
 )
 
 router.get(
-    "/getAllNotes",
+    "/:id",
     AuthMiddleware.auth,
-    getNotesController.getNotes
+    getNotesController.getNote
 )
 
 router.delete(
-    "/deleteNote",
+    "/",
     AuthMiddleware.auth,
     deleteNotesController.deleteNote
 )

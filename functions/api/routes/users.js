@@ -6,7 +6,19 @@ const getUserController = require('../controllers/user/getData')
 const router = express.Router()
 
 router.get(
-    '/getUserData',
+    '/',
+    AuthMiddleware.auth,
+    getUserController.getUserData
+)
+
+router.put(
+    '/',
+    AuthMiddleware.auth,
+    getUserController.getUserData
+)
+
+router.put(
+    ':avatar',
     AuthMiddleware.auth,
     getUserController.getUserData
 )
