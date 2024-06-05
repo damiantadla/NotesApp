@@ -30,16 +30,6 @@ export type Users = {
 
 const userCallbacks = buildEntityCallbacks({
 
-    // onPreSave: ({
-    //                 collection,
-    //                 path,
-    //                 entityId,
-    //                 values,
-    //                 previousValues,
-    //                 status
-    //             }) => {
-    //     if (!isValidEmail(entitySaveProps.values.email)) throw new Error("Invalid email");
-    // },
     onPreSave: ({
                     collection,
                     path,
