@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Create controllers">
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/1525e081-b314-40e5-a6c6-64056d3d8287" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/391cc252-ad84-45ff-9bc6-ea17b7b230e9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/3e412e95-175a-4c62-a901-c447345c3b83" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/53d0b222-3f50-414c-92dc-88a61f9f4dc3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/6878fbe0-1962-48c2-8f43-753321eb5ba3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/7eb69447-db0b-48f9-8052-8d5425a52b5f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/898eb513-f342-47ff-bad9-7dfcc398e393" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/c295202c-c6f2-425d-9621-8cb94b738e5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/e691135e-2ff9-4b2d-aace-d2ed8c983489" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/f7ab96af-7632-4022-a43b-580b3877e141" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/1525e081-b314-40e5-a6c6-64056d3d8287.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/391cc252-ad84-45ff-9bc6-ea17b7b230e9.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/3e412e95-175a-4c62-a901-c447345c3b83.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/53d0b222-3f50-414c-92dc-88a61f9f4dc3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/6878fbe0-1962-48c2-8f43-753321eb5ba3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/7eb69447-db0b-48f9-8052-8d5425a52b5f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/898eb513-f342-47ff-bad9-7dfcc398e393.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/c295202c-c6f2-425d-9621-8cb94b738e5e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/e691135e-2ff9-4b2d-aace-d2ed8c983489.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/f7ab96af-7632-4022-a43b-580b3877e141.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/auth/logout.js" afterDir="false" />
+    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="change workspace.xml">
       <change afterPath="$PROJECT_DIR$/functions/api/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" afterDir="false" />
@@ -42,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/functions/api/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/collections/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.rules" beforeDir="false" afterPath="$PROJECT_DIR$/storage.rules" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +178,7 @@
       <workItem from="1717505525324" duration="20000" />
       <workItem from="1717505558213" duration="108000" />
       <workItem from="1717505678068" duration="4733000" />
-      <workItem from="1717570356654" duration="22412000" />
+      <workItem from="1717570356654" duration="22815000" />
     </task>
     <task id="LOCAL-00001" summary="Edit project">
       <option name="closed" value="true" />
@@ -370,7 +348,39 @@
       <option name="project" value="LOCAL" />
       <updated>1717500933271</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commits">
+      <option name="closed" value="true" />
+      <created>1717594105763</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594105764</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add Logout Controller">
+      <option name="closed" value="true" />
+      <created>1717594153857</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594153857</updated>
+    </task>
+    <task id="LOCAL-00024" summary="change storage rules">
+      <option name="closed" value="true" />
+      <created>1717594168047</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594168047</updated>
+    </task>
+    <task id="LOCAL-00025" summary="change workspace.xml">
+      <option name="closed" value="true" />
+      <created>1717594219337</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594219337</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,6 +422,10 @@
     <MESSAGE value="Refactor index.j, install express" />
     <MESSAGE value="Create routes REST API" />
     <MESSAGE value="Create controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create controllers" />
+    <MESSAGE value="commits" />
+    <MESSAGE value="add Logout Controller" />
+    <MESSAGE value="change storage rules" />
+    <MESSAGE value="change workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="change workspace.xml" />
   </component>
 </project>
