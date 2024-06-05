@@ -2,15 +2,14 @@ const admin = require('firebase-admin');
 const db = admin.firestore();
 
 const deleteNote = async (req, res) => {
-    const {uid} = req.user;
-
-    if (!uid || !req.body.id || !req.body.course) {
+    console.log("damian")
+    if (!req.user.uid || !req.body.id || !req.body.course) {
         return res.status(400).json({
             message: 'Bad Request: Missing required fields'
         });
     }
 
-    if (uid !== req.body.id) {
+    if (req.user.uid !== req.body.id) {
         return res.status(403).json({
             message: 'Forbidden: You are not allowed to delete this note'
         });
