@@ -4,37 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Edit feature changeUserRole.func.js">
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/notes/newNote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/editAvatar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/editData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/controllers/user/getData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/middleware/authMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/routes/courses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/routes/notes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/routes/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/users/changeDataUserFromCollection.func.js" afterDir="false" />
+    <list default="true" id="c19a79bb-282b-4084-918a-d16fc9e13143" name="Changes" comment="Create controllers">
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/1525e081-b314-40e5-a6c6-64056d3d8287" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/391cc252-ad84-45ff-9bc6-ea17b7b230e9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/3e412e95-175a-4c62-a901-c447345c3b83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/53d0b222-3f50-414c-92dc-88a61f9f4dc3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/6878fbe0-1962-48c2-8f43-753321eb5ba3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/7eb69447-db0b-48f9-8052-8d5425a52b5f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/898eb513-f342-47ff-bad9-7dfcc398e393" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/c295202c-c6f2-425d-9621-8cb94b738e5e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/e691135e-2ff9-4b2d-aace-d2ed8c983489" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/blobs/f7ab96af-7632-4022-a43b-580b3877e141" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/1525e081-b314-40e5-a6c6-64056d3d8287.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/391cc252-ad84-45ff-9bc6-ea17b7b230e9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/3e412e95-175a-4c62-a901-c447345c3b83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/53d0b222-3f50-414c-92dc-88a61f9f4dc3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/6878fbe0-1962-48c2-8f43-753321eb5ba3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/7eb69447-db0b-48f9-8052-8d5425a52b5f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/898eb513-f342-47ff-bad9-7dfcc398e393.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/c295202c-c6f2-425d-9621-8cb94b738e5e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/e691135e-2ff9-4b2d-aace-d2ed8c983489.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exportEmulator/storage_export/metadata/f7ab96af-7632-4022-a43b-580b3877e141.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/controllers/auth/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/api/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/courses/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/notes/deleteNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/deleteNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/notes/editNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/editNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/notes/getNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/getNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/notes/newNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/createNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/user/editAvatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/user/editAvatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/user/editData.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/user/editData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/controllers/user/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/user/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/routes/courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/routes/courses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/routes/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/routes/notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/api/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/changMail.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/deleteNote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/changeMail.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/editNote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/changeMailFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/api/controllers/notes/getNote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/changeUserRole.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/changeUserRole.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/closeUserAccount.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/closeUserAccount.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/createUser.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/createUser.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/createUserFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/createUserFromCollection.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/deleteUser.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/deleteUser.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/deleteUserFromCollection.func.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/users/deleteUserFromCollection.func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/users/test.func.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/public/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/lecturer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/collections/notes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/notes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/collections/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/collections/users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/public/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage.rules" beforeDir="false" afterPath="$PROJECT_DIR$/storage.rules" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +83,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="NamedScopeManager">
+    <scope name="Functions" pattern="file[NotesApp]:functions/*||file[NotesApp]:functions/users/*||file[NotesApp]:functions/api/*||file[NotesApp]:functions/api//*" />
+    <scope name="FireCMS" pattern="file[NotesApp]:public//*" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -82,12 +94,17 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2glgzmBScd6oSHhyfhxcF9rwoN3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.courses.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.deleteUserFromCollection.func.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.logout.func.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -104,7 +121,7 @@
     &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Damian\\WebstormProjects\\NotesApp\\public\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -176,7 +193,14 @@
       <workItem from="1717265851155" duration="4471000" />
       <workItem from="1717395057258" duration="23916000" />
       <workItem from="1717438422451" duration="879000" />
-      <workItem from="1717481386917" duration="17154000" />
+      <workItem from="1717481386917" duration="18503000" />
+      <workItem from="1717501929069" duration="10000" />
+      <workItem from="1717501949774" duration="3114000" />
+      <workItem from="1717505509815" duration="7000" />
+      <workItem from="1717505525324" duration="20000" />
+      <workItem from="1717505558213" duration="108000" />
+      <workItem from="1717505678068" duration="4733000" />
+      <workItem from="1717570356654" duration="22412000" />
     </task>
     <task id="LOCAL-00001" summary="Edit project">
       <option name="closed" value="true" />
@@ -258,13 +282,102 @@
       <option name="project" value="LOCAL" />
       <updated>1716892492036</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Edit project">
+      <option name="closed" value="true" />
+      <created>1717500606706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500606706</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create authMiddleware.js">
+      <option name="closed" value="true" />
+      <created>1717500629664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500629664</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactor App.tsx">
+      <option name="closed" value="true" />
+      <created>1717500658786</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500658786</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Create changeDataUserFromCollection.func.js">
+      <option name="closed" value="true" />
+      <created>1717500692256</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500692256</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Edit lecturer.tsx">
+      <option name="closed" value="true" />
+      <created>1717500723636</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500723636</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Delete test.func.js">
+      <option name="closed" value="true" />
+      <created>1717500739871</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500739871</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Edit module user">
+      <option name="closed" value="true" />
+      <created>1717500774442</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500774442</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Edit module user">
+      <option name="closed" value="true" />
+      <created>1717500803166</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500803166</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor index.j, install express">
+      <option name="closed" value="true" />
+      <created>1717500836165</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500836165</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Create routes REST API">
+      <option name="closed" value="true" />
+      <created>1717500885382</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500885382</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Create controllers">
+      <option name="closed" value="true" />
+      <created>1717500933271</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717500933271</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.rules" />
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +392,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edit project" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add new functions" />
     <MESSAGE value="Edit deleteUser.func.js, deleteUserFromCollection.func.js" />
     <MESSAGE value="Edit auth feature" />
@@ -289,6 +402,16 @@
     <MESSAGE value="Edit feature createUser.func.js" />
     <MESSAGE value="Edit feature closeUserAccount.func.js" />
     <MESSAGE value="Edit feature changeUserRole.func.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit feature changeUserRole.func.js" />
+    <MESSAGE value="Edit project" />
+    <MESSAGE value="Create authMiddleware.js" />
+    <MESSAGE value="Refactor App.tsx" />
+    <MESSAGE value="Create changeDataUserFromCollection.func.js" />
+    <MESSAGE value="Edit lecturer.tsx" />
+    <MESSAGE value="Delete test.func.js" />
+    <MESSAGE value="Edit module user" />
+    <MESSAGE value="Refactor index.j, install express" />
+    <MESSAGE value="Create routes REST API" />
+    <MESSAGE value="Create controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create controllers" />
   </component>
 </project>
