@@ -1,0 +1,19 @@
+{
+  "name": "users/avatar/avatar.png",
+  "bucket": "notesapp-f8771.appspot.com",
+  "metageneration": 1,
+  "generation": 1716793175796,
+  "contentType": "image/png",
+  "storageClass": "STANDARD",
+  "contentDisposition": "inline",
+  "downloadTokens": [
+    "00e7620a-eeba-4f22-869a-0e64ad557353"
+  ],
+  "etag": "e1iMZCnawQcDvn+5Uz+8H3Tq45Q",
+  "customMetadata": {},
+  "timeCreated": "2024-05-27T06:59:35.796Z",
+  "updated": "2024-05-27T06:59:35.796Z",
+  "size": 29208,
+  "md5Hash": "+MJ8HCqPBzqddQrWrY2dCQ==",
+  "crc32c": "668528654"
+}
